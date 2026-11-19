@@ -10,11 +10,6 @@ int main(void) {
     printf("Ingrese la altura en metros: ");
     scanf("%f", &altura);
 
-    if (peso <= 0 || altura <= 0) {
-        printf("Error: el peso y la altura deben ser mayores a cero.\n");
-        return 1;
-    }
-
     imc = peso / (altura * altura);
 
     if (imc < 18.5) {
