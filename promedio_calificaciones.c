@@ -5,7 +5,7 @@ int main(void) {
     float calificacion, suma = 0, promedio;
     float mayor, menor;
 
-    // Validar que la cantidad de estudiantes sea positiva
+   
     do {
         printf("Ingrese la cantidad de estudiantes: ");
         scanf("%d", &cantidad);
@@ -15,7 +15,7 @@ int main(void) {
         }
     } while (cantidad <= 0);
 
-    // Ingresar y validar calificaciones
+    
     for (i = 1; i <= cantidad; i++) {
         do {
             printf("Ingrese la calificacion del estudiante %d (0 a 100): ", i);
