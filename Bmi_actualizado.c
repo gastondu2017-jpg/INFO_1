@@ -4,12 +4,22 @@ int main(void) {
     float peso, altura, imc;
     const char *condicion;
 
+do {
     printf("Ingrese el peso en kg: ");
     scanf("%f", &peso);
+    if (peso <= 0) { 
+        printf("Error: ingrese un numero positivo");
+    }
+} while (peso <= 0);
 
+do {
     printf("Ingrese la altura en metros: ");
     scanf("%f", &altura);
-
+    if (altura < 0) { 
+        printf("Error: ingrese un numero mayor a 0");
+    }
+} while (altura < 0);
+    
     imc = peso / (altura * altura);
 
     if (imc < 18.5) {
